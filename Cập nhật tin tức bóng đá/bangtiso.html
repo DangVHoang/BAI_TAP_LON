@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tỉ Số Bóng Đá Mới Nhất</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #003c75, #e8f1f5);
+            color: #333;
+        }
+
+        /* Tiêu đề */
+        .header {
+            text-align: center;
+            background: #003c75;
+            color: #fff;
+            padding: 20px 10px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1rem;
+            color: #d9d9d9;
+            margin-top: 8px;
+        }
+
+        /* Nội dung chính */
+        .main-content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .score-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #003c75;
+        }
+
+        /* Bố cục lưới */
+        .match-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Hiển thị 2 trận mỗi hàng */
+    gap: 20px; /* Khoảng cách giữa các ô */
+}
+
+        /* Thẻ trận đấu */
+        .match-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .match-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Thông tin đội */
+        .team {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .team img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #f0f0f0;
+        }
+
+        .team p {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Tỉ số */
+        .score {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #003c75;
+            margin: 10px 0;
+        }
+
+        .score span {
+            margin: 0 5px;
+        }
+
+        .match-time {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Chân trang */
+        .footer {
+            text-align: center;
+            background: #003c75;
+            color: #fff;
+            padding: 15px 0;
+            font-size: 0.9rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    
+        @media (max-width: 768px) {
+    .match-container {
+        grid-template-columns: 1fr; /* Mỗi hàng chỉ hiển thị 1 trận trên thiết bị nhỏ */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>⚽ Tỉ Số Bóng Đá Mới Nhất</h1>
+        <p>Cập nhật kết quả trực tiếp từ các giải đấu hàng đầu</p>
+    </header>
+    <main class="main-content">
+        <section class="score-section">
+            <h2>Kết Quả Hôm Nay</h2>
+            <div class="match-container">
+               
+                <div class="match-card">
+                    <div class="team team-home">
+                        <img src="/Ảnh/logoChel.png" alt="Logo đội nhà">
+                        <p>Chelsea</p>
+                    </div>
+                    <div class="score">
+                        <span>2</span>
+                        <span>-</span>
+                        <span>1</span>
+                    </div>
+                    <div class="team team-away">
+                        <img src="/Ảnh/Leicester_logo.svg" alt="Logo đội khách">
+                        <p>Leicester</p>
+                    </div>
+                    <p class="match-time">Kết thúc</p>
+                </div>
+                 
+                <div class="match-card">
+                    <div class="team team-home">
+                        <img src="/Ảnh/Fulham_FC_logo.png" alt="Logo đội nhà">
+                        <p>Fulham</p>
+                    </div>
+                    <div class="score">
+                        <span>1</span>
+                        <span>-</span>
+                        <span>4</span>
+                    </div>
+                    <div class="team team-away">
+                        <img src="/Ảnh/Wolverhampton_Wanderers_logo.png" alt="Logo đội khách">
+                        <p>Wolverhampton</p>
+                    </div>
+                    <p class="match-time">Kết thúc</p>
+                </div>
+                 
+                <div class="match-card">
+                    <div class="team team-home">
+                        <img src="/Ảnh/Everton_FC_logo.png" alt="Logo đội nhà">
+                        <p>Everton</p>
+                    </div>
+                    <div class="score">
+                        <span>0</span>
+                        <span>-</span>
+                        <span>0</span>
+                    </div>
+                    <div class="team team-away">
+                        <img src="/Ảnh/Brentford_FC_crest_logo.png" alt="Logo đội khách">
+                        <p>Brentford</p>
+                    </div>
+                    <p class="match-time">Kết thúc</p>
+                </div>
+                 
+                <div class="match-card">
+                    <div class="team team-home">
+                        <img src="/Ảnh/logoArs.png" alt="Logo đội nhà">
+                        <p>Arsenal</p>
+                    </div>
+                    <div class="score">
+                        <span>3</span>
+                        <span>-</span>
+                        <span>0</span>
+                    </div>
+                    <div class="team team-away">
+                        <img src="/Ảnh/Nottingham_Forest_F.C._logo.png" alt="Logo đội khách">
+                        <p>Nottingham</p>
+                    </div>
+                    <p class="match-time">Kết thúc</p>
+                </div>
+                 
+                <div class="match-card">
+                    <div class="team team-home">
+                        <img src="/Ảnh/AFC_Bournemouth_logo.png" alt="Logo đội nhà">
+                        <p>Bournemouth</p>
+                    </div>
+                    <div class="score">
+                        <span>1</span>
+                        <span>-</span>
+                        <span>2</span>
+                    </div>
+                    <div class="team team-away">
+                        <img src="/Ảnh/Brighton_&_Hove_Albion_logo.png" alt="Logo đội khách">
+                        <p>Brighton</p>
+                    </div>
+                    <p class="match-time">Kết thúc</p>
+                </div>
+                 
+                <div class="match-card">
+                    <div class="team team-home">
+                        <img src="/Ảnh/Aston_Villa_FC_logo.png" alt="Logo đội nhà">
+                        <p>Aston Villa</p>
+                    </div>
+                    <div class="score">
+                        <span>2</span>
+                        <span>-</span>
+                        <span>2</span>
+                    </div>
+                    <div class="team team-away">
+                        <img src="/Ảnh/Crystal_Palace_FC_logo_.png" alt="Logo đội khách">
+                        <p>Crystal Palace</p>
+                    </div>
+                    <p class="match-time">Kết thúc</p>
+                </div>
+                 
+                <div class="match-card">
+                    <div class="team team-home">
+                        <img src="/Ảnh/logoMC.png" alt="Logo đội nhà">
+                        <p>Manchester City</p>
+                    </div>
+                    <div class="score">
+                        <span>0</span>
+                        <span>-</span>
+                        <span>4</span>
+                    </div>
+                    <div class="team team-away">
+                        <img src="/Ảnh/logoTOT.png" alt="Logo đội khách">
+                        <p>Tottenham</p>
+                    </div>
+                    <p class="match-time">Kết thúc</p>
+                </div>
+                 
+                <div class="match-card">
+                    <div class="team team-home">
+                        <img src="/Ảnh/356px-FC_Southampton_logo.png" alt="Logo đội nhà">
+                        <p>Southampton</p>
+                    </div>
+                    <div class="score">
+                        <span></span>
+                        <span>-</span>
+                        <span></span>
+                    </div>
+                    <div class="team team-away">
+                        <img src="/Ảnh/logoLiver.png" alt="Logo đội khách">
+                        <p>Liverpool</p>
+                    </div>
+                    <p class="match-time">Chưa diễn ra</p>
+                </div>
+                 
+                <div class="match-card">
+                    <div class="team team-home">
+                        <img src="/Ảnh/Ipswich_Town_logo.png" alt="Logo đội nhà">
+                        <p>Ipswich Town</p>
+                    </div>
+                    <div class="score">
+                        <span></span>
+                        <span>-</span>
+                        <span></span>
+                    </div>
+                    <div class="team team-away">
+                        <img src="/Ảnh/logoMU.png" alt="Logo đội khách">
+                        <p>Manchester United</p>
+                    </div>
+                    <p class="match-time">Chưa diễn ra</p>
+                </div>
+                 
+                <div class="match-card">
+                    <div class="team team-home">
+                        <img src="/Ảnh/Newcastle_United_FC-LOGO.png" alt="Logo đội nhà">
+                        <p>Newcastle United</p>
+                    </div>
+                    <div class="score">
+                        <span></span>
+                        <span>-</span>
+                        <span></span>
+                    </div>
+                    <div class="team team-away">
+                        <img src="/Ảnh/WestHam_logo.png" alt="Logo đội khách">
+                        <p>WestHam</p>
+                    </div>
+                    <p class="match-time">Chưa diễn ra</p>
+                </div>
+             </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 KHMT-HTTT 18-01 | Tất cả các quyền được bảo vệ</p>
+    </footer>
+</body>
+</html>

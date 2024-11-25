@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Câu Lạc Bộ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .club-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .club-card {
+            background-color: #fff;
+            width: 180px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e0e0e0;
+        }
+
+        .club-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .club-logo img {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .club-card:hover .club-logo img {
+            transform: scale(1.1);
+        }
+
+        .club-info {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 8px;
+        }
+
+        .club-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Hiệu ứng hover cho các liên kết */
+        a {
+            color: #ac28a6; /* Màu chữ mặc định */
+            text-decoration: none;
+            display: block;
+            padding: 12px 20px;
+            border-radius: 8px; /* Bo tròn các góc */
+            transition: background-color 0.4s ease, color 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Thêm hiệu ứng chuyển động */
+        }
+
+        /* Hiệu ứng hover khi rê chuột qua các liên kết */
+        a:hover {
+          
+            color: rgb(0, 0, 0); /* Màu chữ trắng khi hover */
+            transform: scale(1.05); /* Phóng to nhẹ khi hover */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ rõ hơn */
+            text-decoration: none; /* Bỏ gạch chân khi hover */
+        }
+
+        /* Cải thiện ảnh banner */
+        img {
+            width: 100%;
+            height: auto; /* Đảm bảo ảnh giữ tỷ lệ */
+            max-height: 200px; /* Giới hạn chiều cao ảnh */
+            object-fit: cover; /* Làm cho ảnh phủ đầy mà không bị méo */
+        }
+        .logo {
+            background-color: #8700c5;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 4px 4px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        header {
+            background-color: #a720c6; /* Màu xanh lá đậm */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        footer {
+            text-align: center;
+            background-color: #a720c6;
+            color: white;
+            padding: 15px 0;
+            font-size: 14px;
+            margin-top: 40px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<header>
+   
+    <nav>
+        <a href="page.html">TRANG CHỦ</a>
+        <a href="tintuc.html">TIN TỨC</a>
+        <a href="thethaovietnam.html">THỂ THAO VIỆT NAM </a>
+        <a href="ngoaihanganh.html">NGOẠI HẠNG ANH </a>
+        <a href="championleague.html">CHAMPION LEAGUE </a>
+        <a href="chuyennhuong.html">CHUYỂN NHƯỢNG </a>
+        <a href="bangtiso.html">BẢNG TỈ SỐ </a></th>
+</nav>
+<h1>Danh sách Câu Lạc Bộ Bóng đá trong nước và quốc tế</h1>
+</header>
+
+<body>
+   
+ 
+
+    <div class="club-list">
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoAC.png" alt="AC Milan">
+            </div>
+            <div class="club-info">1,962 bài viết</div>
+            <div class="club-name">AC Milan</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoArs.png" alt="Arsenal">
+            </div>
+            <div class="club-info">28,422 bài viết</div>
+            <div class="club-name">Arsenal</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoAsRoma.png" alt="AS Roma">
+            </div>
+            <div class="club-info">1,266 bài viết</div>
+            <div class="club-name">AS Roma</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoAtle.png" alt="Atletico Madrid">
+            </div>
+            <div class="club-info">3,857 bài viết</div>
+            <div class="club-name">Atletico Madrid</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoBarc.png" alt="Barcelona">
+            </div>
+            <div class="club-info">26,642 bài viết</div>
+            <div class="club-name">Barcelona</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoMU.png" alt="Manchester United">
+            </div>
+            <div class="club-info">29,752 bài viết</div>
+            <div class="club-name">Manchester United</div>
+        </div>
+
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoMC.png" alt="Manchester City">
+            </div>
+            <div class="club-info">18,627 bài viết</div>
+            <div class="club-name">Manchester City</div>
+        </div>
+
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoChel.png" alt="Chelsea">
+            </div>
+            <div class="club-info">18,361 bài viết</div>
+            <div class="club-name">Chelsea</div>
+        </div>
+
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoReal.png" alt="Real Madrid">
+            </div>
+            <div class="club-info">30,975 bài viết</div>
+            <div class="club-name">Real Madrid</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoTOT.png" alt="Tottenham Hotspur">
+            </div>
+            <div class="club-info">15,401 bài viết</div>
+            <div class="club-name">Tottenham Hotspur</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoJuve.png" alt="Juventus">
+            </div>
+            <div class="club-info">12,735 bài viết</div>
+            <div class="club-name">Juventus</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoLiver.png" alt="Liverpool">
+            </div>
+            <div class="club-info">23,918 bài viết</div>
+            <div class="club-name">Liverpool</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoTXND.png" alt="Thép xanh Nam Định">
+            </div>
+            <div class="club-info">9,612 bài viết</div>
+            <div class="club-name">Thép xanh Nam Định</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoCAHN.png" alt="Công an Hà Nội">
+            </div>
+            <div class="club-info">12,016 bài viết</div>
+            <div class="club-name">Công an Hà Nội</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoHNFC.png" alt="Hà Nội FC">
+            </div>
+            <div class="club-info">8,628 bài viết</div>
+            <div class="club-name">Hà Nội FC</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoHaiPhong.png" alt="Hải Phòng FC">
+            </div>
+            <div class="club-info">8,142 bài viết</div>
+            <div class="club-name">Hải Phòng FC</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoHaTinh.png" alt="Hà Tĩnh FC">
+            </div>
+            <div class="club-info">3,971 bài viết</div>
+            <div class="club-name">Hà Tĩnh FC</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoSLNA.png" alt="Sông Lam Nghệ An">
+            </div>
+            <div class="club-info">7,709 bài viết</div>
+            <div class="club-name">Sông Lam Nghệ An</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoThanQN.png" alt="CLB Than Quảng Ninh">
+            </div>
+            <div class="club-info">8,710 bài viết</div>
+            <div class="club-name">CLB Than Quảng Ninh</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoTPHCM.png" alt="CLB TP.Hồ Chí Minh">
+            </div>
+            <div class="club-info">8,629 bài viết</div>
+            <div class="club-name">CLB TP.Hồ Chí Minh</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoThanhHoa.png" alt="Thanh Hóa FC">
+            </div>
+            <div class="club-info">7,162 bài viết</div>
+            <div class="club-name">Thanh Hóa FC</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoHAGL.png" alt="Hoàng Anh Gia Lai FC">
+            </div>
+            <div class="club-info">13,728 bài viết</div>
+            <div class="club-name">Hoàng Anh Gia Lai FC</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoViettel.png" alt="Viettel FC">
+            </div>
+            <div class="club-info">12,964 bài viết</div>
+            <div class="club-name">Viettel FC</div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-logo">
+                <img src="/Ảnh/logoBinhDinh.png" alt="Bình Định FC">
+            </div>
+            <div class="club-info">4,276 bài viết</div>
+            <div class="club-name">Bình Định FC</div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 KHMT-HTTT 18-01 | Tất cả các quyền được bảo vệ</p>
+    </footer>
+    </body>
+</html>

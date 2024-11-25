@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thể Thao Việt Nam</title>
+    <style>
+        /* Thiết kế nền */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, red 60%, white 40%);
+            color: #333;
+        }
+
+        /* Đầu trang */
+        header {
+            background-color: rgba(247, 247, 110, 0.9);
+            color: red;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: red;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #9000ff;
+        }
+
+        /* Nội dung chính */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-news {
+            display: flex;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .main-news:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .main-news img {
+            width: 50%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .main-news-content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .main-news-content h2 {
+            font-size: 24px;
+            margin: 0 0 10px;
+            color: red;
+        }
+
+        .main-news-content p {
+            font-size: 16px;
+            color: #666;
+            margin: 0 0 10px;
+        }
+
+        .main-news-content .time {
+            font-size: 14px;
+            color: #999;
+        }
+
+        .sub-news {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .sub-news-item {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .sub-news-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .sub-news-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .sub-news-item .content {
+            padding: 10px;
+        }
+
+        .sub-news-item h3 {
+            font-size: 18px;
+            margin: 0 0 10px;
+            color: red;
+        }
+
+        .sub-news-item .time {
+            font-size: 14px;
+            color: #999;
+        }
+
+        /* Chân trang */
+        footer {
+            background-color: rgba(247, 247, 110, 0.9);
+            color: red;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Đầu trang -->
+    <header>
+        <h1 style="color: rgba(255, 255, 255, 0.793);">Thể Thao Việt Nam</h1>
+        <nav>
+            <a href="page.html">TRANG CHỦ</a>
+            <a href="tintuc.html">TIN TỨC</a>
+            <a href="thethaovietnam.html">THỂ THAO VIỆT NAM </a>
+            <a href="ngoaihanganh.html">NGOẠI HẠNG ANH </a>
+            <a href="championleague.html">CHAMPION LEAGUE </a>
+            <a href="chuyennhuong.html">CHUYỂN NHƯỢNG </a>
+            <a href="bangtiso.html">BẢNG TỈ SỐ </a></th>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- Bài viết lớn -->
+        <div class="main-news">
+            <img src="/Ảnh/vleague.jpg" alt="Ảnh bài viết lớn">
+            <div class="main-news-content">
+                <h2>Nhiều đội bóng V.League lên kế hoạch thay đổi ngoại binh giữa mùa giải</h2>
+                <p>Theo đó một số CLB tại V.League như CLB Hà Nội, Đà Nẵng, TP.HCM FC đang có kế hoạch thay đổi ngoại binh trong kỳ...</p>
+                <span class="time">6h trước</span>
+            </div>
+            <div class="main-news-content">
+                <h2>ĐT Việt Nam đã đến Hàn Quốc tập buổi đầu tiên, cựu thủ môn huyền thoại ra mắt</h2>
+                <p>Thầy trò HLV Kim Sang Sik vừa đặt chân đến Hàn Quốc, bắt đầu chuyến tập huấn kéo dài 10 ngày trước thềm AFF Cup 2024....</p>
+                <span class="time">11h trước</span>
+            </div>
+        </div>
+
+        <!-- Các bài viết nhỏ -->
+        <div class="sub-news">
+            <div class="sub-news-item">
+                <img src="/Ảnh/cphuong-solo.jpg" alt="Ảnh bài viết 1">
+                <div class="content">
+                    <h3>Công Phượng đọ siêu phẩm solo với sao Nam Định, mãn nhãn người hâm mộ</h3>
+                    <span class="time">18h trước</span>
+                </div>
+            </div>
+            <div class="sub-news-item">
+                <img src="/Ảnh/Tien-Linh-danhgia.png" alt="Ảnh bài viết 2">
+                <div class="content">
+                    <h3>Tiến Linh đánh giá Indonesia rất mạnh ở AFF Cup, nói về khả năng đá cặp với Xuân Son</h3>
+                    <span class="time">7h trước</span>
+                </div>
+            </div>
+            <div class="sub-news-item">
+                <img src="/Ảnh/cong-phuong-ca-phe" alt="Ảnh bài viết 3">
+                <div class="content">
+                    <h3>Ly cà phê thơm ngon và thực tế đắng ngắt của Công Phượng</h3>
+                    <span class="time">22/11</span>
+                </div>
+            </div>
+        </div>
+        <div class="sub-news">
+            <div class="sub-news-item">
+                <img src="/Ảnh/4ti.jpg" alt="Ảnh bài viết 1">
+                <div class="content">
+                    <h3>Các đội bóng Việt Nam dự giải quốc tế nhận gần 4 tỷ đồng</h3>
+                    <span class="time">23/11</span>
+                </div>
+            </div>
+            <div class="sub-news-item">
+                <img src="/Ảnh/trong-tai-mai-xuan-hung-var.jpg" alt="Ảnh bài viết 2">
+                <div class="content">
+                    <h3>Việt Nam chuẩn bị có thêm trọng tài VAR</h3>
+                    <span class="time">2h trước</span>
+                </div>
+            </div>
+            <div class="sub-news-item">
+                <img src="/Ảnh/vleague_202425_sau_13_chang_duong_dau_tien_an_tuong_thanh_hoa.jpg" alt="Ảnh bài viết 3">
+                <div class="content">
+                    <h3>V.League 2024/25 sau 1/3 chặng đường đầu tiên: Ấn tượng Thanh Hóa</h3>
+                    <span class="time">22/11</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 KHMT-HTTT 18-01 | Tất cả các quyền được bảo vệ</p>
+    </footer>
+</body>
+
+</html>
